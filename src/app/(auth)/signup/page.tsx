@@ -3,11 +3,12 @@ import React from "react";
 import Image from "next/image";
 import InputField from "../../../components/input-field/input-field";
 import LoginIllustration from "../../../assets/images/login-illustration.png";
+import SignUpIllustration from "../../../assets/images/SignUp.svg";
 import Link from "next/link";
 
 const SignUp: React.FC = () => {
   return (
-    <div className="min-h-screen text-gray-800 p-10 flex flex-col sm:flex-row items-center bg-gray-900 justify-evenly w-full">
+    <div className="min-h-screen text-gray-800 p-10 flex flex-col md:flex-row items-center bg-gray-900 justify-evenly w-full">
       <div className="flex flex-col justify-center space-y-5">
         <h1 className="text-3xl md:text-5xl font-bold text-white">Sign up as</h1>
         <h2 className="text-2xl md:text-4xl font-semibold text-purple-500">BeyondOTC Employee Account</h2>
@@ -18,7 +19,9 @@ const SignUp: React.FC = () => {
             Login here!
           </Link>
         </p>
-        {/* <Image src={LoginIllustration} layout="responsive" style={{ maxWidth: 400 }} alt="" loading="lazy" /> */}
+        <div className="hidden md:block self-end">
+          <Image src={SignUpIllustration} layout="responsive" style={{ maxWidth: 300 }} alt="" loading="lazy" />
+        </div>
       </div>
 
       <div className="p-10 rounded-lg w-96 lg:w-1/4">

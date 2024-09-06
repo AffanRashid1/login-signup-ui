@@ -9,6 +9,7 @@ const LoginPage: React.FC = () => {
   return (
     <div className="min-h-screen text-gray-800 p-10 flex flex-col md:flex-row items-center bg-gray-900 justify-evenly w-full">
       <div className="flex flex-col justify-center space-y-5">
+        {/* test  */}
         <h1 className="text-3xl md:text-5xl font-bold text-white">Sign in to</h1>
         <h2 className="text-2xl md:text-4xl font-semibold text-purple-500">BeyondOTC Employee Account</h2>
         <p className="text-white">
